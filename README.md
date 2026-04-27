@@ -42,6 +42,7 @@ After installing, bind these 7 table references to your data:
 |-----------|-------------|
 | Fact Inventory | PRODUCT_ID, WAREHOUSE_ID, QUANTITY_ON_HAND, QUANTITY_AVAILABLE, REORDER_POINT, SAFETY_STOCK, STOCK_STATUS, INVENTORY_VALUE_AT_COST, INVENTORY_VALUE_AT_PRICE |
 | Fact Demand | ORDER_ID, PRODUCT_ID, ORDER_DATE, QUANTITY, UNIT_PRICE, LINE_TOTAL, ORDER_STATUS, REGION, IS_ON_TIME, GROSS_PROFIT |
+
 | Fact Forecast | PRODUCT_ID, FORECAST_DATE, FORECAST_QTY, ACTUAL_QTY, MAPE_PCT, BIAS_PCT, CONFIDENCE_LEVEL |
 | Dim Product | PRODUCT_ID, PRODUCT_NAME, CATEGORY, SUBCATEGORY, UNIT_COST, SUPPLIER_ID |
 | Dim Warehouse | WAREHOUSE_ID |
@@ -50,7 +51,7 @@ After installing, bind these 7 table references to your data:
 
 ## Permissions
 
-The app requests SELECT access on bound tables. All analytics run in-place on your Snowflake warehouse. Cortex AI functions (optional) require access to `SNOWFLAKE.CORTEX.TRY_COMPLETE`.
+The app requests SELECT access on bound tables. All analytics run in-place on your Snowflake warehouse. Cortex AI features (demand narratives, PO recommendations, IDP Assistant) require the **Cortex User** database role — grant it via the **Permissions** tab in Snowsight after installation.
 
 ## Version History
 
