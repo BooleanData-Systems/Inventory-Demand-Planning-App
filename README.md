@@ -1,4 +1,4 @@
-# Inventory & Demand Planning Accelerator
+[# Inventory & Demand Planning Accelerator
 
 AI-powered inventory optimization and demand forecasting — all computed within
 Snowflake from your existing order and inventory data, with zero data movement.
@@ -67,3 +67,4 @@ The pipeline handles missing optional data gracefully:
 ## Support
 
 For issues or questions, contact support@booleandata.io
+](https://github.com/BooleanData-Systems/Inventory-Demand-Planning-App)
